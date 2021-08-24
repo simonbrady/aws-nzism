@@ -50,7 +50,7 @@ resource "aws_s3_bucket_policy" "config" {
         Principal = {
           Service = ["config.amazonaws.com"]
         }
-        Action   = "s3:ListBucket",
+        Action   = "s3:ListBucket"
         Resource = aws_s3_bucket.config[0].arn
       },
       {
